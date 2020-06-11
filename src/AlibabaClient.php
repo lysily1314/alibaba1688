@@ -4,24 +4,24 @@ namespace AlibabaOpen;
 
 use AlibabaOpen\core\ContainerBase;
 use AlibabaOpen\provider\CategoryProvider;
+use AlibabaOpen\provider\LogisticsProvider;
+use AlibabaOpen\provider\MemberProvider;
 use AlibabaOpen\provider\ProductProvider;
-use AlibabaOpen\provider\OrderProvider;
-use AlibabaOpen\provider\OtherProvider;
-use AlibabaOpen\provider\OverseasProvider;
-use AlibabaOpen\provider\AuthProvider;
-//use AlibabaOpen\provider\DevelopProvider;
+use AlibabaOpen\provider\PhotobankProvider;
+use AlibabaOpen\provider\SearchProvider;
+use AlibabaOpen\provider\ServiceProvider;
+use AlibabaOpen\provider\TradeProvider;
 
 /**
  * Class Application
- * @property \AlibabaOpen\functions\product\Product product
- * @property \AlibabaOpen\functions\order\Order order
- * @property \AlibabaOpen\functions\order\Logistics logistics
- * @property \AlibabaOpen\functions\order\Refund refund
- * @property \AlibabaOpen\functions\order\Pay pay
- * @property \AlibabaOpen\functions\other\Other other
- * @property \AlibabaOpen\functions\auth\Auth auth
- * @property \AlibabaOpen\functions\develop\Develop develop
- * @property \AlibabaOpen\functions\overseas\Overseas overseas
+ * @property \AlibabaOpen\functions\Category category
+ * @property \AlibabaOpen\functions\Logistics logistics
+ * @property \AlibabaOpen\functions\Member member
+ * @property \AlibabaOpen\functions\Product product
+ * @property \AlibabaOpen\functions\Photobank photobank
+ * @property \AlibabaOpen\functions\Search search
+ * @property \AlibabaOpen\functions\Service service
+ * @property \AlibabaOpen\functions\Trade trade
  */
 class AlibabaCross extends ContainerBase
 {
@@ -39,11 +39,13 @@ class AlibabaCross extends ContainerBase
      * @var array
      */
     protected $provider = [
-	    OrderProvider::class,
+	    CategoryProvider::class,
+        LogisticsProvider::class,
+        MemberProvider::class,
         ProductProvider::class,
-	    OtherProvider::class,
-	    OverseasProvider::class,
-	    AuthProvider::class,
-	    //DevelopProvider::class
+        PhotobankProvider::class,
+        SearchProvider::class,
+        ServiceProvider::class,
+        TradeProvider::class
     ];
 }
