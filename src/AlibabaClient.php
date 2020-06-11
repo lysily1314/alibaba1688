@@ -3,6 +3,7 @@
 namespace AlibabaOpen;
 
 use AlibabaOpen\core\ContainerBase;
+use AlibabaOpen\provider\CategoryProvider;
 use AlibabaOpen\provider\ProductProvider;
 use AlibabaOpen\provider\OrderProvider;
 use AlibabaOpen\provider\OtherProvider;
