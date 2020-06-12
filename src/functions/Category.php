@@ -6,7 +6,8 @@ use AlibabaOpen\core\BaseClient;
 use AlibabaOpen\entity\category\{
 	CategorySearchSPUInfoParams,
     CategoryLevelAttrGetParams,
-    CategoryAttributeGetParams
+    CategoryAttributeGetParams,
+	CategoryGetSPUInfoParams
 };
 
 /**
@@ -38,6 +39,7 @@ class Category extends BaseClient
     }
 
     /**
+     * 获取叶子类目属性
      * @param CategoryAttributeGetParams $categoryAttributeGetParams
      * @return $this
      */
@@ -45,6 +47,17 @@ class Category extends BaseClient
         $this->app->params = $categoryAttributeGetParams->build();
         $this->url_info    = 'com.alibaba.product:alibaba.category.attribute.get-1';
         return $this;
+    }
+
+	/**
+	 * 获取标准化产品单元信息(1688)
+	 * @param \AlibabaOpen\entity\category\CategoryGetSPUInfoParams $categoryGetSPUInfoParams
+	 * @return $this
+	 */
+    public function categoryGetSPUInfo(CategoryGetSPUInfoParams $categoryGetSPUInfoParams){
+	    $this->app->params = $categoryGetSPUInfoParams->build();
+	    $this->url_info    = 'com.alibaba.product:alibaba.category.getSPUInfo-1';
+	    return $this;
     }
 	
 }
