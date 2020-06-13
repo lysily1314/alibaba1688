@@ -11,7 +11,7 @@ use AlibabaOpen\interfaces\Provider;
 /**
  * Class ProductProvider
  * @package AlibabaOpen\provider
- * @property \AlibabaOpen\functions\product\Service service
+ * @property \AlibabaOpen\functions\Service service
  */
 class ServiceProvider implements Provider
 {

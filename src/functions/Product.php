@@ -101,5 +101,5 @@ class Product extends BaseClient
 	public function productModifyStock(){}
 	public function productEdit(){}
 	public function productGetByStatus(){}
-	
+
 }

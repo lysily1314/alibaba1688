@@ -11,7 +11,7 @@ use AlibabaOpen\interfaces\Provider;
 /**
  * Class ProductProvider
  * @package AlibabaOpen\provider
- * @property \AlibabaOpen\functions\product\Trade trade
+ * @property \AlibabaOpen\functions\Trade trade
  */
 class TradeProvider implements Provider
 {

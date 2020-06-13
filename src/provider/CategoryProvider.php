@@ -11,8 +11,9 @@ use AlibabaOpen\interfaces\Provider;
 /**
  * Class ProductProvider
  * @package AlibabaOpen\provider
- * @property \AlibabaOpen\functions\product\Product product
+ * @property \AlibabaOpen\functions\Category category
  */
+
 class CategoryProvider implements Provider
 {
     /**

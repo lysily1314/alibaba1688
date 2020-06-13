@@ -11,7 +11,7 @@ use AlibabaOpen\interfaces\Provider;
 /**
  * Class ProductProvider
  * @package AlibabaOpen\provider
- * @property \AlibabaOpen\functions\Logistics pogistics
+ * @property \AlibabaOpen\functions\Logistics logistics
  */
 class LogisticsProvider implements Provider
 {
