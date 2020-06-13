@@ -92,6 +92,14 @@ class Product extends BaseClient
 		return $this;
 	}
 
-
-
+	public function productGet(){}
+	public function productAdd(){}
+	public function productGroupGetSwitch(){}
+	public function productIsModifiable(){}
+	public function productListGet(){}
+	public function productGetByIdList(){}
+	public function productModifyStock(){}
+	public function productEdit(){}
+	public function productGetByStatus(){}
+	
 }

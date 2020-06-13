@@ -3,7 +3,6 @@ namespace AlibabaOpen\oauth;
 
 use AlibabaOpen\core\Exception;
 use AlibabaOpen\core\BaseClient;
-use function Lite\func\array_keys_exists;
 
 class AlibabaOauth extends Exception {
 
