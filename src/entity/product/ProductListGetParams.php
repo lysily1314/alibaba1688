@@ -45,16 +45,16 @@ class ProductListGetParams extends BaseEntityParams{
 	/**
 	 * @param $name
 	 * @param $arguments
-	 * @return \AlibabaOpen\entity\product\ProductGetByIdListParams
+	 * @return $this
 	 */
-	public function __call($name, $arguments):ProductGetByIdListParams{
+	public function __call($name, $arguments){
 		$string = ltrim($name , 'set');
 		$field = lcfirst($string);
 		$this->$field = $arguments[0];
 		return $this;
 	}
 
-	/**
+	/**P
 	 * @inheritDoc
 	 */
 	public function build()
