@@ -3,7 +3,7 @@
 namespace AlibabaOpen\functions;
 
 use AlibabaOpen\core\BaseClient;
-use AlibabaOpen\entity\product\{
+use AlibabaOpen\entity\member\{
 
 };
 
