@@ -1,5 +1,5 @@
 {
-    "name": "alibaba/open1688",
+    "name": "charon/open1688",
     "description": "1688开放平台接口",
     "require": {
         "php": ">=7.2"
